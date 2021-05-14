@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ div.timer {
+    width:400px;
+    font-size:60px;
+    font-family:"Courier New", Courier, monospace;
+    background-color: transparent;
+    text-align:center;
+    padding-left: 36.5%;
+
+}
+body {
+    background-image: url(Beautiful-Sky--Free-Stock-Photo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+}
+.control {
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  opacity: 18%;
+}
+
+</style>
+</head>
+<body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <div class="timer">
+        <span class="hour">00</span>:<span class="minute">00</span>:<span class="second">10</span>
+    </div>
+    <div class="control">
+        <button onClick="timer.start(1000)">Start</button> 
+        <button onClick="timer.stop()">Stop</button> 
+        <button onClick="timer.reset(0)">Reset</button> 
+        <button onClick="timer.mode(1)">Count up</button> 
+        <button onClick="timer.mode(0)">Count down</button>
+    </div>
+<script src="js.js"></script>
+<script src="css.css"></script>
+</body>
+</html>
